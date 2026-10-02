@@ -14,6 +14,9 @@ interface ChapterDao {
     @Query("SELECT * FROM chapters ORDER BY subject ASC, sNo ASC")
     fun getAllChapters(): Flow<List<Chapter>>
 
+    @Query("SELECT * FROM chapters ORDER BY subject ASC, sNo ASC")
+    suspend fun getAllChaptersSync(): List<Chapter>
+
     @Query("SELECT * FROM chapters WHERE subject = :subject ORDER BY sNo ASC")
     fun getChaptersBySubject(subject: Subject): Flow<List<Chapter>>
 
@@ -25,6 +28,9 @@ interface ChapterDao {
 
     @Query("SELECT COUNT(*) FROM chapters")
     suspend fun getChapterCount(): Int
+
+    @Query("DELETE FROM chapters")
+    suspend fun deleteAll()
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insertAll(chapters: List<Chapter>)

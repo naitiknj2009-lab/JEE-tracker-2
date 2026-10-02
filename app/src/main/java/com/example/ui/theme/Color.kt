@@ -11,7 +11,9 @@ enum class AppThemeMode {
     SYSTEM
 }
 
+// -------------------------------------------------------------
 // Dark Palette (Obsidian Luxury Glass)
+// -------------------------------------------------------------
 val DarkBackgroundCanvas = Color(0xFF070A11)
 val DarkSurface = Color(0xFF0D1424)
 val DarkSurfaceElevated = Color(0xFF131D31)
@@ -23,29 +25,40 @@ val DarkTextPrimary = Color(0xFFF8FAFC)
 val DarkTextSecondary = Color(0xFF94A3B8)
 val DarkTextMuted = Color(0xFF64748B)
 
-// Light Palette (Frosted Crisp Crystal)
-val LightBackgroundCanvas = Color(0xFFF1F5F9)
+// -------------------------------------------------------------
+// Light Palette (Nordic Alabaster & Frosted Opal for Deep Study)
+// -------------------------------------------------------------
+val LightBackgroundCanvas = Color(0xFFF4F7FC) // Soothing eye-friendly alabaster canvas
 val LightSurface = Color(0xFFFFFFFF)
 val LightSurfaceElevated = Color(0xFFF8FAFC)
-val LightGlassSurface = Color(0xE6FFFFFF) // 90% white frosted
-val LightGlassSurfaceElevated = Color(0xF2FFFFFF)
-val LightGlassBorderTop = Color(0xFFE2E8F0)
+val LightGlassSurface = Color(0xF2FFFFFF) // 95% translucent frosted crystal
+val LightGlassSurfaceElevated = Color(0xFAFFFFFF)
+val LightGlassBorderTop = Color(0xFFE2E8F0) // Subtle specular light rim
 val LightGlassBorderBottom = Color(0xFFCBD5E1)
-val LightTextPrimary = Color(0xFF0F172A)
-val LightTextSecondary = Color(0xFF475569)
-val LightTextMuted = Color(0xFF94A3B8)
+val LightTextPrimary = Color(0xFF0F172A) // Razor-sharp deep slate for study focus
+val LightTextSecondary = Color(0xFF334155) // High-contrast slate-700
+val LightTextMuted = Color(0xFF64748B) // Slate-500
 
-// Subject Accents
+// -------------------------------------------------------------
+// Subject Accents (Curated for Cognitive Focus & Visual Memory)
+// -------------------------------------------------------------
+// Physics: Deep Sage / Emerald
 val PhysicsEmerald = Color(0xFF10B981)
 val PhysicsEmeraldLight = Color(0xFF059669)
+
+// Chemistry: Warm Honey Amber
 val ChemistryAmber = Color(0xFFF59E0B)
 val ChemistryAmberLight = Color(0xFFD97706)
+
+// Mathematics: Royal Cobalt Cyan
 val MathCyan = Color(0xFF06B6D4)
 val MathCyanLight = Color(0xFF0284C7)
 
-// Brand & Alerts
+// Brand & Mission: Electric Violet / Royal Indigo
 val ElectricViolet = Color(0xFF8B5CF6)
-val ElectricVioletLight = Color(0xFF7C3AED)
+val ElectricVioletLight = Color(0xFF6366F1)
+
+// Alerts & Mistakes: Crimson Rose
 val CrimsonNegative = Color(0xFFF43F5E)
 val CrimsonNegativeLight = Color(0xFFE11D48)
 
@@ -121,11 +134,11 @@ val LightJeeColors = JeeColors(
     textSecondary = LightTextSecondary,
     textMuted = LightTextMuted,
     physicsPrimary = PhysicsEmeraldLight,
-    physicsSurface = Color(0x1E059669),
+    physicsSurface = Color(0xFFECFDF5), // Soothing mint pastel
     chemistryPrimary = ChemistryAmberLight,
-    chemistrySurface = Color(0x1ED97706),
+    chemistrySurface = Color(0xFFFFFBEB), // Honey cream pastel
     mathPrimary = MathCyanLight,
-    mathSurface = Color(0x1E0284C7),
+    mathSurface = Color(0xFFF0F9FF), // Ice blue pastel
     violetPrimary = ElectricVioletLight,
     crimsonPrimary = CrimsonNegativeLight,
     chipBg = Color(0xFFF1F5F9),

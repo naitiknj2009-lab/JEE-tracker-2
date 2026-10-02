@@ -21,14 +21,20 @@ class ExampleRobolectricTest {
   }
 
   @Test
-  fun `verify syllabus chapters count`() {
+  fun `verify syllabus chapters count and uniqueness`() {
     val physics = InitialData.getPhysicsChapters()
     val chemistry = InitialData.getChemistryChapters()
     val math = InitialData.getMathematicsChapters()
+    
     assertEquals(29, physics.size)
     assertEquals(22, chemistry.size)
     assertEquals(28, math.size)
     assertEquals(79, InitialData.getAllChapters().size)
+
+    // Verify all names are completely unique per subject
+    assertEquals(29, physics.map { it.name.trim().lowercase() }.distinct().size)
+    assertEquals(22, chemistry.map { it.name.trim().lowercase() }.distinct().size)
+    assertEquals(28, math.map { it.name.trim().lowercase() }.distinct().size)
   }
 
   @Test
