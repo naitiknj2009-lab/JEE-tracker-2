@@ -1,0 +1,6 @@
+{
+  "name": "JEE Tracker",
+  "description": "Comprehensive distraction-free JEE Main preparation OS with syllabus tracking, test analytics, mistake notebook, and revision planner.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
